@@ -4,7 +4,7 @@ $(document).ready(function() {
     var sideB = $("input#side2").val();
     var sideC = $("input#side3").val();
 
-    if ((sideA + sideB < sideC) && (sideA + sideC < sideB) && (sideB + sideC < sideA)) {
+    if ((sideA + sideB < sideC) || (sideA + sideC < sideB) || (sideB + sideC < sideA)) {
         $("#none").show();
 
     } else if (sideA === sideB && sideB === sideC && sideA === sideC) {
